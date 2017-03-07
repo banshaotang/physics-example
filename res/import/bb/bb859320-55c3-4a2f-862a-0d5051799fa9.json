@@ -1,0 +1,456 @@
+[
+  {
+    "__type__": "cc.SceneAsset",
+    "_name": "wheel-joint",
+    "scene": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": false
+  },
+  {
+    "__type__": "cc.Scene",
+    "_name": "New Node",
+    "_children": [
+      {
+        "__id__": 2
+      }
+    ],
+    "_anchorPoint": {
+      "__type__": "cc.Vec2"
+    },
+    "autoReleaseAssets": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Canvas",
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 9
+      },
+      {
+        "__id__": 10
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "cc.Canvas",
+        "node": {
+          "__id__": 2
+        }
+      },
+      {
+        "__type__": "8bb59G9YJZM663ZrZZZSww8",
+        "node": {
+          "__id__": 2
+        }
+      }
+    ],
+    "_id": "0ebd4tfyTNFN7qN92T3gXlY",
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 960,
+      "height": 640
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 480,
+      "y": 320
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "car",
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [
+      {
+        "__id__": 4
+      },
+      {
+        "__id__": 6
+      },
+      {
+        "__id__": 7
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -390,
+      "y": -261
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "body",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__id__": 5
+      },
+      {
+        "__type__": "cc.PhysicsBoxCollider",
+        "node": {
+          "__id__": 4
+        },
+        "_size": {
+          "__type__": "cc.Size",
+          "width": 100,
+          "height": 42
+        }
+      },
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 4
+        },
+        "_spriteFrame": {
+          "__uuid__": "0aa0b36c-c4a9-4ce2-ab3b-efede708e6d4"
+        },
+        "_sizeMode": 0
+      }
+    ],
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 140,
+      "g": 178,
+      "b": 247
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 100,
+      "height": 42
+    }
+  },
+  {
+    "__type__": "cc.RigidBody",
+    "node": {
+      "__id__": 4
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Circle40",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 6
+        },
+        "_spriteFrame": {
+          "__uuid__": "9cfa3853-1095-4989-81b9-89f8cf45594f"
+        }
+      },
+      {
+        "__type__": "cc.RigidBody",
+        "node": {
+          "__id__": 6
+        }
+      },
+      {
+        "__type__": "cc.PhysicsCircleCollider",
+        "node": {
+          "__id__": 6
+        },
+        "_radius": 20
+      },
+      {
+        "__type__": "cc.WheelJoint",
+        "node": {
+          "__id__": 6
+        },
+        "connectedBody": {
+          "__id__": 5
+        },
+        "connectedAnchor": {
+          "__type__": "cc.Vec2",
+          "x": -26,
+          "y": -26
+        },
+        "localAxisA": {
+          "__type__": "cc.Vec2",
+          "y": 1
+        },
+        "_maxMotorTorque": 1000,
+        "_motorSpeed": -400,
+        "_enableMotor": true,
+        "_frequency": 10,
+        "_dampingRatio": 0
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 6
+      },
+      "fileId": "c7a7fNJx4hISIjqo8ML+Uox"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 41,
+      "height": 41
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -26,
+      "y": -26
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Circle40",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 7
+        },
+        "_spriteFrame": {
+          "__uuid__": "9cfa3853-1095-4989-81b9-89f8cf45594f"
+        }
+      },
+      {
+        "__type__": "cc.RigidBody",
+        "node": {
+          "__id__": 7
+        }
+      },
+      {
+        "__type__": "cc.PhysicsCircleCollider",
+        "node": {
+          "__id__": 7
+        },
+        "_radius": 20
+      },
+      {
+        "__type__": "cc.WheelJoint",
+        "node": {
+          "__id__": 7
+        },
+        "connectedBody": {
+          "__id__": 5
+        },
+        "connectedAnchor": {
+          "__type__": "cc.Vec2",
+          "x": 26,
+          "y": -26
+        },
+        "localAxisA": {
+          "__type__": "cc.Vec2",
+          "y": 1
+        },
+        "_maxMotorTorque": 1000,
+        "_frequency": 10,
+        "_dampingRatio": 0
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 7
+      },
+      "fileId": "c7a7fNJx4hISIjqo8ML+Uox"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 41,
+      "height": 41
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 26,
+      "y": -26
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Platform320",
+    "_parent": {
+      "__id__": 2
+    },
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 8
+        },
+        "_spriteFrame": {
+          "__uuid__": "a04566e6-5563-466e-bff2-3137ac3566c6"
+        },
+        "_type": 1,
+        "_sizeMode": 0
+      },
+      {
+        "__type__": "cc.RigidBody",
+        "node": {
+          "__id__": 8
+        },
+        "_type": 0
+      },
+      {
+        "__type__": "cc.PhysicsBoxCollider",
+        "node": {
+          "__id__": 8
+        },
+        "_size": {
+          "__type__": "cc.Size",
+          "width": 320,
+          "height": 11
+        },
+        "_friction": 1
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 8
+      },
+      "fileId": "f81ea+eG6RFM7UmEMxdrSFv"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 320,
+      "height": 11
+    },
+    "_rotationX": -10,
+    "_rotationY": -10,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 143,
+      "y": -245
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Platform320",
+    "_parent": {
+      "__id__": 2
+    },
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 9
+        },
+        "_spriteFrame": {
+          "__uuid__": "a04566e6-5563-466e-bff2-3137ac3566c6"
+        },
+        "_type": 1,
+        "_sizeMode": 0
+      },
+      {
+        "__type__": "cc.RigidBody",
+        "node": {
+          "__id__": 9
+        },
+        "_type": 0
+      },
+      {
+        "__type__": "cc.PhysicsBoxCollider",
+        "node": {
+          "__id__": 9
+        },
+        "_size": {
+          "__type__": "cc.Size",
+          "width": 320,
+          "height": 11
+        },
+        "_friction": 1
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 9
+      },
+      "fileId": "f81ea+eG6RFM7UmEMxdrSFv"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 320,
+      "height": 11
+    },
+    "_rotationX": -10,
+    "_rotationY": -10,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -171,
+      "y": -300
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Platform320",
+    "_parent": {
+      "__id__": 2
+    },
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 10
+        },
+        "_spriteFrame": {
+          "__uuid__": "a04566e6-5563-466e-bff2-3137ac3566c6"
+        },
+        "_type": 1,
+        "_sizeMode": 0
+      },
+      {
+        "__type__": "cc.RigidBody",
+        "node": {
+          "__id__": 10
+        },
+        "_type": 0
+      },
+      {
+        "__type__": "cc.PhysicsBoxCollider",
+        "node": {
+          "__id__": 10
+        },
+        "_size": {
+          "__type__": "cc.Size",
+          "width": 320,
+          "height": 11
+        },
+        "_friction": 1
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 10
+      },
+      "fileId": "f81ea+eG6RFM7UmEMxdrSFv"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 320,
+      "height": 11
+    },
+    "_rotationX": -10,
+    "_rotationY": -10,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 456,
+      "y": -190
+    }
+  }
+]
